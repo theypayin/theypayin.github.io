@@ -6,7 +6,8 @@ local Tween = function(Object, Time, Style, Direction, Property)
 end
 local Credits = task.spawn(function()
     local UserIds = {
-        4882533577
+        4882533577,
+	4888788185
     }
     
     if table.find(UserIds, Player.UserId) then
