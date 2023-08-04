@@ -33,7 +33,7 @@ local Credits = task.spawn(function()
     Rank.Size = UDim2.new(1, 0, .5, 0)
     Rank.TextColor3 = Color3.fromRGB(0, 0, 0)
     Rank.TextScaled = true
-    Rank.Text = ""
+    Rank.Text = "Creator"
     
     Gradient.Color = ColorSequence.new({
         ColorSequenceKeypoint.new(0, Color3.new(.75, .75, .75)),
@@ -78,7 +78,7 @@ local Credits = task.spawn(function()
     for _, x in next, Players:GetPlayers() do
         if table.find(UserIds, x.UserId) then
             Tag.Parent = workspace.Terrain
-            Title.Text = x.Name
+            Title.Text = 'voidfunction'
             AddTitle(x.Character)
             x.CharacterAdded:Connect(AddTitle)
         end
